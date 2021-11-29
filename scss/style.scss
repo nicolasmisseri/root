@@ -1,0 +1,186 @@
+@import "variables.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  //   background-color: #4a148c;
+}
+
+.encabezado-main {
+  margin: 10% 0 10% 0;
+  text-align: center;
+
+  .encabezado-main__titulo {
+    text-align: center;
+    margin-bottom: 5%;
+    background-color: $colorTerciario;
+    font-style: italic;
+    // font-size: 3rem;
+
+    // color: #4a148c;
+  }
+  .encabezado-main__p {
+    padding: 5%;
+    background-color: $colorCuaternario;
+    color: $colorPrimario;
+  }
+
+  .encabezado-main__botones {
+    justify-content: center;
+    a {
+      color: white;
+    }
+  }
+}
+.div-video__tamaño {
+  padding: 0 10% 0 10%;
+}
+
+#carouselExampleControls {
+  margin: 10% 0 10% 0;
+}
+
+.nosotros {
+  margin: 10% 0 10% 0;
+  text-align: center;
+  justify-content: space-around;
+  .nosotros__card {
+    display: inline-block;
+    margin-top: 10%;
+    box-sizing: content-box;
+    width: 100%;
+    P {
+      display: none;
+    }
+  }
+}
+
+.footer__redes-sociales {
+  a {
+    color: $colorCuaternario;
+  }
+  margin-bottom: 5%;
+  margin-top: 25%;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "li li li";
+  text-decoration: none;
+  li {
+    justify-content: center;
+    list-style-type: none;
+    img {
+      width: 100%;
+      height: 64px;
+    }
+  }
+}
+
+#tabla-alineacion {
+  justify-content: center;
+}
+
+#formularioDeContacto {
+  color: black;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  padding: 5% 0 5% 0;
+  // margin: 0 5% 0 5%;
+  // border-radius: 5%;
+  // background-image: url("https://cdn.pixabay.com/photo/2018/04/04/22/14/abstract-3291293_960_720.jpg");
+  filter: blur(0.2rem);
+  transition: all 0.5s ease-out;
+  // clip-path: polygon(0% 50%, 100% 50px, 100% 100%, 0% calc(100% – 50px));
+  .blurrear {
+    backdrop-filter: blur(0.5rem);
+  }
+  .btn {
+    margin-top: 2%;
+    background-color: $colorCuaternario;
+  }
+}
+#formularioDeContacto:hover {
+  filter: blur(0);
+}
+
+#tarjetas {
+  display: grid;
+  grid-template-columns: 3fr;
+  grid-template-rows: 4fr;
+  grid-template-areas:
+    "card-1 card-2 card-3"
+    "card-4 card-5 card-6"
+    "card-7 card-8 card-9"
+    "card-10 card-11 card-12";
+}
+// Utilice el For y dentro de el una operacion para darle a cada
+// cada card el tamaño diferente de border radius, y a todas el mismo
+// color de boton
+@for $i from 1 through 12 {
+  #card-#{$i} {
+    grid-area: card-#{$i};
+    border: none;
+    box-shadow: 2px 2px 3px #999;
+    img {
+      border-radius: 10%;
+    }
+    border-radius: 10%;
+    .btn {
+      background-color: $colorCuaternario;
+      border: none;
+    }
+  }
+}
+.card__scale:hover {
+  transform: scale(1.1, 1.1);
+  z-index: 1000;
+}
+
+.float {
+  position: fixed;
+  width: 67px;
+  bottom: 95px;
+  right: 20px;
+  // background-color: #fff;
+  // color: #25d366;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  // box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+// .float:hover {
+//   text-decoration: none;
+//   color: #25d366;
+//   background-color: #fff;
+// }
+.float-img {
+  width: 100%;
+}
+
+.my-float {
+  margin-top: 16px;
+}
+
+// @media screen and (max-width: 720px) {
+//   #tarjetas {
+//     grid-template-areas:
+//       "card-1 card-2 "
+//       "card-3 card-4"
+//       "card-5 card-6"
+//       "card-7 card-8"
+//       "card-9 card-10"
+//       "card-11 card-12";
+//   }
+// } ejemplo de grid template areas-
+
+.tamanio {
+  font-size: 1.5rem;
+}
+#logounity {
+  width: 2.7rem;
+  height: 3rem;
+}
