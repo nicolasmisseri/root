@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
+  
 
 .encabezado-main {
   margin: 10% 0 10% 0;
@@ -61,7 +62,9 @@
 
 #formularioDeContacto {
   color: black;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+ "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+ "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   padding: 5% 0 5% 0;
   filter: blur(0.2rem);
   transition: all 0.5s ease-out; }
@@ -78,7 +81,10 @@
   display: grid;
   grid-template-columns: 3fr;
   grid-template-rows: 4fr;
-  grid-template-areas: "card-1 card-2 card-3" "card-4 card-5 card-6" "card-7 card-8 card-9" "card-10 card-11 card-12"; }
+  grid-template-areas: "card-1 card-2 card-3"
+ "card-4 card-5 card-6"
+ "card-7 card-8 card-9"
+ "card-10 card-11 card-12"; }
 
 #card-1 {
   grid-area: card-1;
@@ -238,3 +244,6 @@
 #logounity {
   width: 2.7rem;
   height: 3rem; }
+  
+[alt="www.000webhost.com"] {
+display:none}
