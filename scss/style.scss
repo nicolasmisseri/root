@@ -184,3 +184,24 @@
   width: 2.7rem;
   height: 3rem;
 }
+
+.mapa {
+  margin: 10% 0 0 0;
+  width: 100%;
+}
+input[type="submit"] {
+  background-color: $colorCuaternario;
+  border: none;
+}
+#imagen_bailarina {
+  width: 100vh;
+}
+.bg-light {
+  background-color: white !important;
+}
+
+#logo_unity {
+  font-family: "Bebas Neue", cursive;
+  justify-content: center;
+  font-size: xx-large;
+}
