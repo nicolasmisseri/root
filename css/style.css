@@ -253,13 +253,6 @@
 .card:hover::after {
   opacity: 1; }
 
-.card:hover .btn-outline {
-  color: #ffffff;
-  background: #de89be; }
-
-picture {
-  margin-bottom: 50px; }
-
 .tamanio {
   font-size: 1.5rem; }
 
